@@ -1,0 +1,225 @@
+/* Parallax accueil */
+
+.haut-accueil {
+    background-image: url("../images/imgAccueil/parallax-accueil.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.titre {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 350px;
+    padding-top: 5px;
+    text-shadow: 3px 3px 2px black;
+    font-weight: bold;
+    font-size:  50px; ;
+}
+
+/* Carrousel d'images : */
+
+/* Ecran mobiles*/
+@media screen and ( min-width: 768px ){
+    .carrousel {
+        width:768px;
+        height:500px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .img-1, .img-2, .img-3 {
+        position: absolute;
+        width:auto;
+        height:auto;
+    }
+
+    .img-1{left: 0;}
+    .img-2{left: 768px;}
+    .img-3{left: 1536px;}
+}
+
+/* Tablettes et PC*/
+@media screen and ( max-width: 768px ){
+    .carrousel {
+        width:460.8px;
+        height:300px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .img-1, .img-2, .img-3 {
+        position: absolute;
+        width:60%;
+        height:60%;
+        transform: scale(0.6, 0.6 );
+    }
+    
+    .img-1{left: 0;}
+    .img-2{left: 460.8px;}
+    .img-3{left: 921.6px;}
+    
+}
+
+.conteneur_images {
+    width: auto;
+    height: auto;
+    left:0px;
+    position: absolute;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: anim_slide;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-name: anim_slide;
+}
+
+@-webkit-keyframes anim_slide {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-100%;}
+    45% {left:-100%;}
+    66% {left:-200%;}
+    90% {left:-200%;}
+}
+
+@keyframes anim_slide {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-100%;}
+    45% {left:-100%;}
+    66% {left:-200%;}
+    90% {left:-200%;}
+}
+
+/* Boutons */ 
+.flex-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flex-container>*{
+    font-size: 20px;
+    border-radius: 15px;
+    color: white;
+    margin: 15px;
+    padding : 15px 20px 15px 20px;
+    background-color: #197bbd;
+}
+
+.flex-container>*:hover{
+    background-color: #2490d8;
+}
+
+/* Cartes d'actualités */
+.card-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    display: flex; 
+    flex-flow: wrap; 
+}
+.actualite {
+    width: 90%;
+    margin: 0.5em auto;
+    flex: 1 0 48%; 
+    margin: 1%; 
+    border-radius: 18px;
+    text-align: center;
+    background-color: white;
+}
+
+.description {
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+.description > h3 {
+    border-radius: 4px;
+    color: white;
+    padding: 2px 0 2px 0;
+
+}
+
+.actualite > button{
+    margin: 0 auto 15px 0;
+    padding: 5px 20px 5px 20px;
+    border-radius: 4px;
+}
+
+@media (min-width: 1001px) { 
+    .actualite { flex: 1 0 31%; } 
+    .actualite:last-of-type { flex-grow: 0; }
+}
+
+/*Première carte*/
+.card-container > :nth-child(1){
+    background-color:#c8092f;
+    border: 1px solid white;
+
+}
+.card-container > :nth-child(1)>  div{
+    background-color:#c8092f;
+    color: white;
+}
+.card-container > :nth-child(1) > div > h3{
+    background-color:white;
+    color: #c8092f;
+}
+.card-container > :nth-child(1)> button{
+    background-color: white;
+    color: #c8092f;
+    border: white;
+}
+.card-container > :nth-child(1)> button:hover{
+    background-color:#c8092f;
+    color: white;
+    border: 1px solid white;
+}
+
+/*Deuxième carte*/
+.card-container > :nth-child(2){
+    background-color:white;
+    border: 1px solid #c8092f;
+}
+.card-container > :nth-child(2) > div > h3{
+    background-color:#c8092f;
+}
+.card-container > :nth-child(2)> button{
+    background-color:#c8092f;
+    color: white;
+    border: #c8092f;
+}
+.card-container > :nth-child(2)> button:hover{
+    background-color:white;
+    color: #c8092f;
+    border: 1px solid #c8092f;
+}
+
+/*Troisième carte*/
+.card-container > :nth-child(3){
+    background-color:white;
+    border: 1px solid #197bbd;
+
+}
+
+.card-container > :nth-child(3) > div > h3{
+    background-color: #197bbd;
+}
+.card-container > :nth-child(3)> button{
+    background-color:#197bbd;
+    color: white;
+    border: #197bbd;
+}
+.card-container > :nth-child(3)> button:hover{
+    background-color:white;
+    color: #197bbd;
+    border: 1px solid #197bbd;
+}

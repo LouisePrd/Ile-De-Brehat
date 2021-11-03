@@ -1,0 +1,130 @@
+.mapPlan{
+    padding-bottom: 5px;
+    border: 0.15rem solid #721919;
+    border-radius: 30px;
+}
+
+.fondMap2{
+    padding-bottom: 5px;
+}
+
+.equipe{
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.col-equipe{
+    justify-content: center !important;
+}
+
+.images{
+	  max-width: 8em !important;
+	  height: auto;
+}
+
+.conseil{
+    max-width: 6.8em !important;
+    padding-top: 12px;
+}
+
+
+.elus{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color : black;
+  }
+
+.info{
+    color:black;
+    text-align: center;
+    font-size: 1.01em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0 !important;
+  }  
+  
+.box {
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    background-clip: padding-box;
+    text-align: center;
+}
+  
+.navbar-toggler {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+
+/* Gestion des popups */
+
+.popup {
+    margin: 300px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border-width: 0 0 0 10px;
+    border-color: red;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    color: black;
+    text-align: justify;
+}
+
+.nom{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 10px;
+    color: red;
+    text-align: justify !important;
+}
+  
+@media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+}

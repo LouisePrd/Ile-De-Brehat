@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Accueil</title>
+  <!--<link rel="icon" href=""> icone barre des taches-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleStats.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleGlobal.css">
+
+
+  <!--police-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Bootstrap-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<!--JS-->
+<script type="text/javascript">
+  function ChangeIMG(Source) {
+    var img = document.getElementById("image").src = "../images/imgStats/" + Source + ".png";
+
+    if (Source == 'CABio') document.getElementById("message").innerHTML = "Le chiffre d'affaire du bio était à 20 000€ en Juin, il a connu un pic à 50 000€ en Juillet, avant de redéscendre au niveau précédant.";
+    if (Source == 'CACasher') document.getElementById("message").innerHTML = "Le chiffre d'affaire du casher était à 6 000€ en Juin, il a connu un pic à 16 000€ en Juillet, avant de redéscendre à un niveau légèrement supérieur à celui de Juin.";
+    if (Source == 'CAHalal') document.getElementById("message").innerHTML = "Le chiffre d'affaire du halal était presque nul en Juin, il est grimpé à 600€ en Juillet, avant de redéscendre légèrement à 500€ en Août.";
+    if (Source == 'CAVegan') document.getElementById("message").innerHTML = "Le chiffre d'affaire du vegan total était à 5 000€ en Juin, il est monté à plus de 14 000€ en Juillet et est redéscendu à 8 000€ en Août.";
+    if (Source == 'CATicket') document.getElementById("message").innerHTML = "Le chiffre d'affaire total était de 60 000€ en Juin, il est monté à plus de 180 000€ en Juillet et est redéscendu à un peu plus de 80 000€ en Août.";
+    if (Source == 'Top10MoyenClient') document.getElementById("message").innerHTML = "Le montant du ticket moyen des 10 meilleurs clients est d'une moyenne proche de 100€.";
+    if (Source == 'PMTicket') document.getElementById("message").innerHTML = "Le montant moyen de chaque ticket était de 30€ en Juin, ce motant moyen est passé à 60€ en Juillet et Août.";
+    if (Source == 'Top10ClientBioJuin') document.getElementById("message").innerHTML = "Les dépenses des 10 meilleurs clients pour les produits bios en Juin sont de 600€ en moyenne.";
+    if (Source == 'Top10ClientBioJuillet') document.getElementById("message").innerHTML = "Les dépenses des 10 meilleurs clients pour les produits bios de Juillet sont plus de 2 fois plus élevé qu'en Juin avec une moyenne approchant les 1 500€.";
+    if (Source == 'Top10CLientBioAout') document.getElementById("message").innerHTML = "Les dépenses des 10 meilleurs clients pour les produits bios d'Août sont descendu près des 1 000€.";
+    if (Source == 'Top10ClientCasherJuin') document.getElementById("message").innerHTML = "Les dépenses des 10 meilleurs clients pour les produits casher en Juin sont de 200€ en moyenne.";
+    if (Source == 'Top10ClientCasherJuillet') document.getElementById("message").innerHTML = "En Juillet, les dépenses des 10 meilleurs clients pour les produits casher sont passées à une moyenne de plus de 500€.";
+    if (Source == 'Top10ClientCasherAout') document.getElementById("message").innerHTML = "En Août, les dépenses des 10 meilleurs clients pour les produits casher sont redescendues sous les 400€.";
+    if (Source == 'Top10ClientVeganJuin') document.getElementById("message").innerHTML = "En moyennes, les 10 meilleurs clients pour les produits végans de Juin ont dépensé environ 150€.";
+    if (Source == 'Top10ClientVeganJuillet') document.getElementById("message").innerHTML = "En moyennes, les 10 meilleurs clients pour les produits végans de Juillet ont dépensé environ 500€.";
+    if (Source == 'Top10ClientVeganAout') document.getElementById("message").innerHTML = "En Août, la facture totale des 10 meilleurs clients de produits végans sont redescendues à une moyenne d'environ 300€.";
+    if (Source == 'Top10MoyenHalalJuin') document.getElementById("message").innerHTML = "En Juin, un seul client à acheter un produit halal pour moins de 30€.";
+    if (Source == 'Top10MoyenHalalJuillet') document.getElementById("message").innerHTML = "En Juillet, 9 clients ont acheté halal avec une facture moyenne de presque 50€.";
+    if (Source == 'Top10MoyenHalalAout') document.getElementById("message").innerHTML = "En Août, il n'y a eu que 6 clients pour les produits halal mais leur facture moyenne ne change pas.";
+
+    return false;
+  }
+</script>
+
+
+<body class="body text-light">
+
+   <!--MENU-->
+   <nav class="navbar navbarUn navbar-expand-lg navbar-light bg-light justify-content-center">
+    <img class="logo" src="../images/logo.png" alt="Logo">
+    <a class="navbar-brand" href="../sources/Accueil.html">Île-de-Brehat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>-
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Accueil.html">ACCUEIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Municipalité.html">MUNICIPALITE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Statistiques.html">STATISTIQUES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/aImplémenter.html">ACTIVITES ET DECOUVERTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/ContactModif.html#popup">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--FIN MENU-->
+
+  <div class="row col-titre">
+    <div class="col-12">
+      <h1>Statistiques</h1>
+      <p class="texte1">ACCUEIL / STATISTIQUES</p>
+    </div>
+  </div>
+  <div class="row col-presentation">
+    <div class="col-8 soustitre">
+      <p>Statistiques des ventes de l'épicerie de l'Île</p>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div>
+      <img id="image" src="../images/imgStats/CABio.png">
+      <div id="descripteur">
+        <article id="message">
+          Le chiffre d'affaire du bio était à 20 000€ en juin, il a connu un pic à 50 000€ en juillet, avant de
+          redésendre au niveau précédant.
+        </article>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li><button class="clikme" onclick="ChangeIMG('CABio');">Afficher le chiffre d'affaire du Bio</button></li>
+        <li><button class="clikme" onclick="ChangeIMG('CACasher');">Afficher le chiffre d'affaire du Casher</button>
+        </li>
+        <li><button class="clikme" onclick="ChangeIMG('CAHalal');">Afficher le chiffre d'affaire du Halah</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('CAVegan');">Afficher le chiffre d'affaire du Vegan</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('CATicket');">Afficher le chiffre d'affaire par mois</button>
+        </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10MoyenClient');">Afficher le ticket moyen des 10 meilleurs
+            clients</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('PMTicket');">Afficher le prix moyen de chaque ticket</button>
+        </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientBioJuin');">Afficher le top 10 des clients BIO de
+            Juin</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientBioJuillet');">Afficher le top 10 des clients BIO de
+            Juillet</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10CLientBioAout');">Afficher le top 10 des clients BIO de
+            Août</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientCasherJuin');">Afficher le top 10 des clients casher
+            de Juin</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientCasherJuillet');">Afficher le top 10 des clients
+            casher de Juillet</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientCasherAout');">Afficher le top 10 des clients casher
+            de Août</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientVeganJuin');">Afficher le top 10 des clients vegan de
+            Juin</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientVeganJuillet');">Afficher le top 10 des clients vegan
+            de Juillet</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10ClientVeganAout');">Afficher le top 10 des clients vegan de
+            Août</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10MoyenHalalJuin');">Afficher le top 10 des clients halal de
+            Juin</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10MoyenHalalJuillet');">Afficher le top 10 des clients halal
+            de Juillet</button> </li>
+        <li><button class="clikme" onclick="ChangeIMG('Top10MoyenHalalAout');">Afficher le top 10 des clients halal de
+            Août</button> </li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+<!--FIN PAGE-->
+
+<!--PIED DE PAGE-->
+<footer>
+  <div class="bordparallax">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">LES ACTUALITÉS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">L’AGENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/Metéo.html">LA MÉTÉO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">PLAN DU SITE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">MENTIONS LÉGALES / RGPD</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax"> </div>
+  <div class="row pied-de-page">
+    <div class="col-4">
+      <p>Site officiel de la commune d’Île-de-Bréhat. <br><br> <img class="logo test" src="../images/vol.jpg" alt="vol">
+        Toute l’information pratique sur l’administration de la commune, les démarches administratives, les services,
+        la vie quotidienne insulaire, les loisirs et le tourisme.</p>
+    </div>
+    <div class="col-4">
+      <p>Retrouvez-nous sur les réseaux sociaux</p>
+      <a href="https://fr-fr.facebook.com/ile.de.brehat" target="_blank"><img class="logo" src="../images/facebook.png" alt="fb"></a>
+      <a href="https://www.instagram.com/ile_de_brehat/?hl=fr" target="_blank"><img class="logo" src="../images/instagram.png" alt="insta"></a>
+    </div>
+  </div>
+</footer>
+<!--FIN PIED DE PAGE-->
+
+</html>

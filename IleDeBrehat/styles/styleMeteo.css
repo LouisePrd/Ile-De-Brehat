@@ -1,0 +1,32 @@
+.contPhare{
+    color : black;
+    background-color: rgb(230, 240, 245) !important;
+    text-align:justify;
+    justify-content: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.2em;
+    margin-top: 2%;
+    border-radius: 6px;
+    padding-bottom: 0.7%;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 65%;
+    margin-bottom: 3%;
+}
+
+.conteneur{
+    color : black;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    width: 45%;
+    margin-top: 1%;
+}
+
+.phare{
+    padding-top: 10px;
+    max-width: 100px;
+}

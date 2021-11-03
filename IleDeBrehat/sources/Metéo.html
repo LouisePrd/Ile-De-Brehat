@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Accueil</title>
+  <!--<link rel="icon" href=""> icone barre des taches-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleMunicipalité.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleGlobal.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleMeteo.css">
+
+
+  <!--police-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Bootstrap-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body class="body text-light">
+
+   <!--MENU-->
+   <nav class="navbar navbarUn navbar-expand-lg navbar-light bg-light justify-content-center">
+    <img class="logo" src="../images/logo.png" alt="Logo">
+    <a class="navbar-brand" href="../sources/Accueil.html">Île-de-Brehat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>-
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Accueil.html">ACCUEIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Municipalité.html">MUNICIPALITE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/Statistiques.html">STATISTIQUES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/aImplémenter.html">ACTIVITES ET DECOUVERTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../sources/ContactModif.html#popup">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--FIN MENU-->
+
+  <div class="row col-titre">
+    <div class="col-12">
+      <h1>La météo à Bréhat</h1>
+      <p class="texte1">ACCUEIL / LA METEO</p>
+    </div>
+  </div>
+
+  <div class="row col-presentation">
+    <div class="col-8 soustitre">
+      <p>Météo et alertes <br>
+        Consultez les prévisions météo pour la semaine en cliquant sur le fanion planté sur Bréhat.</p>
+    </div>
+  </div>
+
+  <center><iframe width="650" height="450"
+    src="https://embed.windy.com/embed2.html?lat=48.846&lon=-3.005&detailLat=48.795&detailLon=-3.000&width=650&height=450&zoom=11&level=surface&overlay=temp&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+    frameborder="0"></iframe></center>
+
+  <center><div class="conteneur">
+    <a href="http://maree.info/60" target="_blank"><img class="" src="../images/imgMeteo/marée.png" alt="marée"></a><br><br>
+    Cliquez pour les informations relatives aux aux marées d’après les prédictions des marées officielles © SHOM
+    </div></center>
+
+
+    <div class="contPhare">
+        <img class="phare test" src="../images/imgMeteo/phare.png" alt="phare">
+    <center>Et s’il pleut … une occupation originale et pédagogique</center>
+    
+    Dézoomez et partez à la découverte de la météo mondiale. Dans le menu de Windy, poussez le curseur “Surface” et explorez
+     les conditions météo depuis le niveau de la mer jusqu’à 13,5 km d’altitude. Activez les isolignes et découvrez comment
+      notre planète respire. Les anticyclones n’auront plus de secrets pour vous.</div>
+
+
+<!--PIED DE PAGE-->
+<footer>
+  <div class="bordparallax">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">LES ACTUALITÉS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">L’AGENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/Metéo.html">LA MÉTÉO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">PLAN DU SITE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deuxNav" href="../sources/aImplémenter.html">MENTIONS LÉGALES / RGPD</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax"> </div>
+  <div class="row pied-de-page">
+    <div class="col-4">
+      <p>Site officiel de la commune d’Île-de-Bréhat. <br><br> <img class="logo test" src="../images/vol.jpg" alt="vol">
+        Toute l’information pratique sur l’administration de la commune, les démarches administratives, les services,
+        la vie quotidienne insulaire, les loisirs et le tourisme.</p>
+    </div>
+    <div class="col-4">
+      <p>Retrouvez-nous sur les réseaux sociaux</p>
+      <a href="https://fr-fr.facebook.com/ile.de.brehat" target="_blank"><img class="logo" src="../images/facebook.png" alt="fb"></a>
+      <a href="https://www.instagram.com/ile_de_brehat/?hl=fr" target="_blank"><img class="logo" src="../images/instagram.png" alt="insta"></a>
+    </div>
+  </div>
+</footer>
+
+
+</html>
