@@ -13,4 +13,4 @@ JS, JQuery, Bootstrap
 
 
 Extrait :
-![Accueil-min](https://user-images.githubusercontent.com/77757761/211946640-da64a274-f8e2-4bb9-9f90-f2013d231534.png)
+![Accueil-min(1)](https://user-images.githubusercontent.com/77757761/211947400-821b3d73-71f0-4814-99da-ca13d295b5ee.png)
