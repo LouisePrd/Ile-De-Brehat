@@ -11,6 +11,5 @@ Objectif : Repenser le site selon les consignes
 
 JS, JQuery, Bootstrap
 
-
-Extrait :
+## Extrait résultat :
 ![Accueil-min(1)](https://user-images.githubusercontent.com/77757761/211947400-821b3d73-71f0-4814-99da-ca13d295b5ee.png)
